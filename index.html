@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shablon-1</title>
+    <title>Restoran</title>
+    <link rel="icon" href="images/logo.svg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -24,54 +25,37 @@
       <div class="container">
         <nav class="header__nav df">
           <div class="header__nav__logo">
-            <a href="index.html">Logo</a>
+            <a href="index.html"><img src="images/logo.svg" alt="" /></a>
           </div>
           <ul class="header__nav__right__list df">
             <li class="header__nav__right__list__item">
-              <a href="#hero">Home</a>
+              <a href="#hero">ГЛАВНАЯ</a>
             </li>
             <li class="header__nav__right__list__item">
-              <a href="#">About</a>
+              <a href="#">МЕНЮ</a>
             </li>
             <li class="header__nav__right__list__item">
-              <a href="#">Services</a>
+              <a href="#">О НАС</a>
             </li>
             <li class="header__nav__right__list__item">
-              <a href="#">Partners</a>
+              <a href="#">БРОНЬ</a>
             </li>
-            <div class="dropdown">
-              <div class="dropdown__text df">
-                <p>Dropdown</p>
-                <span class="dropdown__icon">
-                  <i class="fa-solid fa-chevron-down"></i>
-                </span>
-              </div>
-              <ul class="dropdown__list">
-                <li class="dropdown__item">
-                  <a href="#">Item 1</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#">Item 2</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#">Item 3</a>
-                </li>
-                <li class="dropdown__item">
-                  <a href="#">Item 4</a>
-                </li>
-              </ul>
-            </div>
+            <li class="header__nav__right__list__item df">
+              <a class="phone__number" href="#"
+                ><img src="images/korzina.svg" alt=""
+              /></a>
+              <a class="phone__number" href="tel:+999-888-76-54"
+                ><img src="images/phone.svg" alt=""
+              /></a>
+              <h3 class="phone__number" style="color: white">+999-888-76-54</h3>
+            </li>
 
             <li class="header__nav__right__list__close">
               <i class="fa-solid fa-x"></i>
             </li>
           </ul>
           <div class="header__nav__right__btns df">
-            <button class="header__nav__right__btns__dark-mode">
-              <i class="fa-solid fa-moon"></i>
-              <i class="fa-solid fa-sun"></i>
-            </button>
-            <button class="header__nav__right__btns__contact">Contact</button>
+            <button class="btn nav__btn">ЗАКАЗ СТОЛИКА</button>
             <button class="header__nav__right__btns__hamburger">
               <span class="header__nav__right__btns__hamburger__line"></span>
               <span class="header__nav__right__btns__hamburger__line"></span>
@@ -82,8 +66,134 @@
       </div>
     </header>
     <main>
-      <section class="container" id="hero"></section>
+      <section class="container" id="hero">
+        <div class="hero__left">
+          <h2>Добро пожаловать в</h2>
+          <h1>Наш ресторан</h1>
+          <h3 style="color: white">ДОМ ЛУЧШЕЙ ЕДЫ</h3>
+          <button class="btn">View menu</button>
+        </div>
+      </section>
+      <section class="istoriya container">
+        <div class="istoriya__cards">
+          <div class="istoriya__card">
+            <img src="images/cook.svg" alt="" />
+            <h3>Магическая Атмосфера</h3>
+            <p class="desc5">
+              В нашем заведении царит магическая атмосфера наполненная вкусными
+              ароматами
+            </p>
+          </div>
+          <div class="istoriya__card">
+            <img src="images/cook.svg" alt="" />
+            <h3>Магическая Атмосфера</h3>
+            <p class="desc5">
+              В нашем заведении царит магическая атмосфера наполненная вкусными
+              ароматами
+            </p>
+          </div>
+          <div class="istoriya__card">
+            <img src="images/cook.svg" alt="" />
+            <h3>Магическая Атмосфера</h3>
+            <p class="desc5">
+              В нашем заведении царит магическая атмосфера наполненная вкусными
+              ароматами
+            </p>
+          </div>
+        </div>
+        <div class="istoriya__bottom df">
+          <div class="istoriya__left">
+            <h3>Наша История</h3>
+            <p class="desc7">
+              Как и у любого другого самобытного места, у нас есть своя, особая
+              история. Идея ресторана пришла основателям неожиданно. Во время
+              прогулки по лесу создатель нашего ресторана застрял в сотнях
+              километров от ближайшего населенного пункта. Вдали от цивилизации
+              и связи им пришлось навремя обустровать себе нехитрый быт,
+              добывать и готовить себе еду.
+            </p>
+            <div class="ranks df">
+              <h2>93</h2>
+              <h2>93</h2>
+              <h2>93</h2>
+            </div>
+          </div>
+          <div class="istoriya__right">
+            <img style="width: 100%" src="images/istoriya.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="zakaz container df">
+        <div class="zakaz__left">
+          <h2 class="desc3">
+            Отпразднуйте в одном из самых лучших ресторанов.
+          </h2>
+          <h3 style="color: white">
+            Только в этом месяце бизнес-ланч от 250 ₽
+          </h3>
+        </div>
+        <div class="zakaz__right">
+          <button class="btn">ЗАКАЗ СТОЛИКА</button>
+        </div>
+      </section>
+      <section class="blyuda">
+        <div class="container">
+          <div class="blyuda__cards">
+            <div class="blyuda__card">
+              <img style="width: 50%" src="images/hamburger.svg" alt="" />
+              <h3>Гамбургер макси</h3>
+              <p>Максимально толстый слой мяса</p>
+              <button class="btn">ЗАКАЗАТЬ</button>
+            </div>
+            <div class="blyuda__card">
+              <img style="width: 50%" src="images/hamburger.svg" alt="" />
+              <h3>Гамбургер макси</h3>
+              <p>Максимально толстый слой мяса</p>
+              <button class="btn">ЗАКАЗАТЬ</button>
+            </div>
+            <div class="blyuda__card">
+              <img style="width: 50%" src="images/hamburger.svg" alt="" />
+              <h3>Гамбургер макси</h3>
+              <p>Максимально толстый слой мяса</p>
+              <button class="btn">ЗАКАЗАТЬ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container nikolay">
+        <p style="text-align: center;" class="desc5">
+          Я надолго запомню мой День рождения, проведённый в этом ресторане!
+          Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде
+          фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и
+          родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+        </p>
+        <img src="images/nikolay.svg" alt="">
+        <h3>Посетитель</h3>
+        <p>NIKOLAY</p>
+      </section>
+      <section class="container blyud">
+        <h2>Галерея Блюд</h2>
+        <div class="blyud__cards">
+          <a href="#" class="blyud--1"> <img style="width: 100%; height: 100%;" src="images/blyud.svg" alt=""></a>
+          <a href="#" class="blyud--2"> <img style="width: 100%; height: 100%;" src="images/blyud-2.svg" alt=""></a>
+          <a href="#" class="blyud--3"> <img style="width: 100%; height: 100%;" src="images/blyud-2.svg" alt=""></a>
+          <a href="#" class="blyud--4"> <img style="width: 100%; height: 100%;" src="images/blyud-2.svg" alt=""></a>
+          <a href="#" class="blyud--5"> <img style="width: 100%; height: 100%;" src="images/blyud-2.svg" alt=""></a>
+          <a href="#" class="blyud--6"> <img style="width: 100%; height: 100%;" src="images/blyud.svg" alt=""></a>
+        </div>
+      </section>
+      <section class="povara container">
+        <h2>Наши Повара</h2>
+        <div class="povars">
+          <img src="images/povar.svg" alt="">
+          <img src="images/povar.svg" alt="">
+          <img src="images/povar.svg" alt="">
+        </div>
+      </section>
     </main>
+    <footer>
+      <img width="100%" src="images/footer.svg" alt="">
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>

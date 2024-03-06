@@ -7,15 +7,26 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 0;
+    padding: 25px 0px;
     z-index: 999;
+    padding-bottom: 100px;
+    margin: auto;
 }
+
 
 
 .show__header__shrink {
     padding: 15px 0;
     box-shadow: 0px 0px 10px $hoverColor;
     background: $secondaryColor;
+}
+
+.show__header__shrink .header__nav__right__list__item{
+    color: $primaryColor ;
+}
+
+.show__header__shrink .phone__number{
+    color: $primaryColor !important;
 }
 
 .header__nav__logo {
@@ -39,7 +50,8 @@ body {
     border-top: 1px solid transparent;
     position: relative;
     transition: 0.3s;
-    color: $primaryColor;
+    color: $secondaryColor;
+    gap: 20px;
 }
 
 .header__nav__right__list__item::after {
@@ -87,22 +99,7 @@ body {
 }
 
 
-.header__nav__right__btns__contact {
-    padding: 6px 13px;
-    border: 2px solid $primaryColor;
-    background-color: transparent;
-    border-radius: 2px;
-    font-size: 16px;
-    font-weight: 600;
-    transition: 0.3s;
-    color: $primaryColor;
-}
 
-.header__nav__right__btns__contact:hover {
-    border-color:$hoverColor;
-    background:$hoverColor;
-    color:$secondaryColor;
-}
 
 .header__nav__right__btns__hamburger {
     border: none;
@@ -117,36 +114,15 @@ body {
 .header__nav__right__btns__hamburger span {
     width: 20px;
     height: 2.5px;
-    background: $primaryColor;
+    background: $hoverColor;
     border-radius: 2px;
     transition: .4s;
 }
 
-.header__nav__right__btns__hamburger:hover 
-.header__nav__right__btns__hamburger__line {
-    background: $hoverColor;
-}
 
-.header__nav__right__btns__dark-mode {
-    border: none;
-    background: transparent;
-    color: $darkModeColor;
-    font-size: 18px;
-}
 
-.header__nav__right__btns__dark-mode .fa-sun {
-    display: none;
-}
 
-.dark .header__nav__right__btns__dark-mode .fa-moon {
-    display: none;
-}
-
-.dark .header__nav__right__btns__dark-mode .fa-sun {
-    display: block;
-}
-
-@media (max-width: 700px ){
+@media (max-width: 990px ){
     .header__nav__right__list {
         position: fixed;
         top: 0;
@@ -172,6 +148,12 @@ body {
 
     .show__header__nav__right__list {
         left: 0;
+        background: url(../images/hero-bcg.svg)no-repeat center;
+        
+    }
+
+    .show__header__nav__right__list .header__nav__right__list__item{
+        color: $secondaryColor;
     }
 
     .header__nav__right__list__close {
